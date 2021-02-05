@@ -4,7 +4,7 @@ class CreateWings < ActiveRecord::Migration[6.0]
         t.string :type
         t.string :flavor
         t.integer :user_id
-        t.integer :location_id
+        t.integer :restaurant_id
         t.timestamps
       end
     end

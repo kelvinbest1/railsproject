@@ -1,6 +1,6 @@
 class Wing < ApplicationRecord
     belongs_to :user
-    belongs_to :location
+    belongs_to :restaurant
 
     validates :type, :flavor, presence: true
 
