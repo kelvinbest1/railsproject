@@ -1,6 +1,6 @@
 class CreateWings < ActiveRecord::Migration[6.0]
     def change
-      create_table :games do |t|
+      create_table :wings do |t|
         t.string :type
         t.string :flavor
         t.integer :user_id
