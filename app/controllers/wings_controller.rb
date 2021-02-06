@@ -28,3 +28,16 @@ class WingsController < ApplicationController
             render :new
         end
     end
+
+    def update
+        if @wing.update(game_params)
+            redirect_to user_game_path(current_user.id, @wing)
+        else
+            render :edit
+        end
+    end
+
+    def destroy
+        @wing.destroy
+        redirect_to user_wings_path(current_user.id)
+    end

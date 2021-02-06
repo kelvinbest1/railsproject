@@ -3,7 +3,7 @@ class RestaurantsController < ApplicationController
     before_action :redirect_if_not_logged_in
 
     def index
-        @restaurants = Restaurant.genre_with_most_games #scope method for index finding the restaurant with the most games
+        @restaurants = Restaurant.restaurant_with_most_wings #scope method for index finding the restaurant with the most games
     end
 
     def new
@@ -19,3 +19,11 @@ class RestaurantsController < ApplicationController
             render :new
         end
     end
+
+    private
+
+    def genre_params
+        params.require(:restaurant).permit(:restaurant_data)
+    end
+
+end
