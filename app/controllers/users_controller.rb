@@ -16,7 +16,6 @@ class UsersController < ApplicationController
         @user.wings.build #nested attributes build for new view in user signup
     end
 
-
     def create
         @user = User.new(user_params)
 
@@ -32,3 +31,11 @@ class UsersController < ApplicationController
         redirect_if_not_logged_in
         @user = User.find_by_id(params[:id])
     end
+
+    private 
+
+    def user_params
+        params.require(:user).permit(:name, :email, :password, games_attributes: [:title, :platform, :user_id, :genre_id])
+    end
+
+end
