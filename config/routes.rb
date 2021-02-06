@@ -9,3 +9,11 @@ Rails.application.routes.draw do
   delete '/sessions/' => 'sessions#destroy'
   get '/auth/:provider/callback' => 'sessions#create'
   get '/search' => 'users#search'
+
+  <div class="signup_account">
+  <p>Don't have an account? <%= link_to "Sign up", "/signup" %> here!</p>
+</div>
+
+<div class="github_sign_in">
+  <p><%= link_to "Log in with GitHub", "/auth/github" %></p>
+</div>
