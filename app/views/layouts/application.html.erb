@@ -12,3 +12,18 @@
   </head>
 
   <body>
+
+  <div class="nav-bar">
+  ChickenWings Experience|
+  <% if logged_in? %>
+    <%= link_to 'account', user_path(current_user.id) %> |
+    <%= link_to 'logout', sessions_path, method: :delete, data: { confirm: "Are you sure you want to logout?" } %><br>
+  <% else %>
+    <%= link_to 'signup', '/signup' %>
+  <% end %>
+  </div>
+
+    <%= yield %>
+  </body>
+</html>
+
