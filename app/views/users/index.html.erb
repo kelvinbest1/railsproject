@@ -1,0 +1,10 @@
+<div class="user_list">
+    <h1>List of Users</h1>
+
+    <h4>Click on a name to view their list of wings!</h4>
+    <ul>
+        <% @users.each do |user| %>
+            <li><%= link_to user.name, user_wings_path(user.id) %></li><br>
+        <% end %>
+    </ul>
+</div>
