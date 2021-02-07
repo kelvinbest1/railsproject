@@ -1,0 +1,12 @@
+<%= form_tag(@user, { class: "signup_form" } )do %>
+<h2>Sign Up Here!</h2>
+    <% if @user.errors.any? %>
+        <div id="error_message">
+            <h4>The following errors have occurred:</h4>
+            <ul>
+                <% @user.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
