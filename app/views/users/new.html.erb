@@ -26,13 +26,13 @@
 
             <p>Immediately add a wing to your collection at signup!</p>
 
-            <%= f.fields_for :games do |wing| %>
+            <%= f.fields_for :wings do |wing| %>
 
             <%= wing.text_field :type, placeholder: true, required: true %><br><br>
 
                 <%= wing.text_field :flavor, placeholder: true, required: true %><br><br>
 
-                <%= wing.label :genre_type %>
+                <%= wing.label :restaurants_type %>
                 <%= wing.collection_select :restaurant_id, Restaurant.all, :id, :restaurant_type %><br><br>
 
             <% end %>
