@@ -32,8 +32,8 @@
 
                 <%= wing.text_field :flavor, placeholder: true, required: true %><br><br>
 
-                <%= wing.label :restaurants_type %>
-                <%= wing.collection_select :restaurant_id, Restaurant.all, :id, :restaurant_type %><br><br>
+                <%= wing.label :restaurant_data %>
+                <%= wing.collection_select :restaurant_id, Restaurant.all, :id, :restaurant_data %><br><br>
 
             <% end %>
 

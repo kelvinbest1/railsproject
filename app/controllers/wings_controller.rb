@@ -31,7 +31,7 @@ class WingsController < ApplicationController
 
     def update
         if @wing.update(game_params)
-            redirect_to user_game_path(current_user.id, @wing)
+            redirect_to user_wing_path(current_user.id, @wing)
         else
             render :edit
         end

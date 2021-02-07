@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 3) do
   end
 
   create_table "wings", force: :cascade do |t|
-    t.string "type"
+    t.string "style"
     t.string "flavor"
     t.integer "user_id"
     t.integer "restaurant_id"
