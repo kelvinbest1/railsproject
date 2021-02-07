@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #6FBFF5;
+}
+
+/* css styles for nav-bar  */
+
+.nav-bar {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* end css styles for nav-bar  */
+
+/* ------------------------- */
+
+/* css styles for login form */
+
+.login_form {
+    width: 200px;
+    padding: 40px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    background: #3D6884;
+    text-align: center;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.login_form h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.login_form input[type = 'email'],.login_form input[type = 'password'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 10px 10px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.signup_account {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+.signup_account a {
+    color: white;
+}
+
+.github_sign_in {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+.github_sign_in a {
+    color: white;
+    text-decoration: none;
+}
+
+.login_form input[type = 'submit'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 10px 10px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ /* end css styles for login form  */
+
+ /* ------------------------------ */
+
+ /* css styles for errors */
+
+ #error_message h4 {
+    color: orangered;
+    text-transform: uppercase;
+ }
+
+ #error_message {
+     color: orangered;
+     text-transform: uppercase;
+ }
+
+ /* end css styles for errors */
+
+ /* -------------------------- */
+
+ /* css styles for signup form */
+
+ .signup_form {
+    width: 200px;
+    padding: 40px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    background: #3D6884;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.signup_form h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.signup_form p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.signup_form label {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+
+.signup_form input[type = 'text'],.signup_form input[type = 'email'],.signup_form input[type = 'password'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 5px 5px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.signup_form select {
+    border: 0;
+    background: #3D6884;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 5px 5px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.signup_form input[type = 'submit'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 10px 10px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* end css styles for sign up form */
+
+/* ----------------------------- */
+
+/* css styles for game form */
+
+.wing_form {
+    width: 200px;
+    padding: 40px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    background: #3D6884;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.wing_form input[type = 'text'],.signup_form input[type = 'email'],.signup_form input[type = 'password'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 5px 5px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.wing_form h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.wing_form label {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.wing_form select {
+    border: 0;
+    background: #3D6884;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 5px 5px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.wing_form input[type = 'submit'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 10px 10px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* end css styles for game form  */
+
+/* -------------------------------- */
+
+/* css styles for genre form */
+
+.restaurant_form {
+    width: 200px;
+    padding: 40px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    background: #3D6884;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.restaurant_form input[type = 'text'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 10px 10px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+}
+
+.restaurant_form h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.restaurant_form input[type = 'submit'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #D5EBFA;
+    padding: 10px 10px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* end css styles for genre form */
+
+/* --------------------------------- */
+
+/* css styles for game list */
+
+.wing_list {
+    color: white;
+    text-transform: uppercase;
+}
+
+.wing_list h1 {
+    font-weight: 200;
+}
+
+.wing_list ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* end css styles for game list */
+
+/* --------------------------------- */
+
+/* css styles for game list */
+
+.user_list {
+    color: white;
+    text-transform: uppercase;
+}
+
+.user_list h1 {
+    font-weight: 200;
+}
+
+.user_list ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* end css styles for game list */
+
+/* --------------------------------- */
+
+/* css styles for game details */
+
+.wing_details {
+    color: white;
+    text-transform: uppercase;
+}
+
+.wing_details h1 {
+    font-weight: 200;
+}
+
+/* end css styles for game details */
+
+/* --------------------------------- */
+
+/* css styles for genre with most games */
+
+.restaurant_most_wing h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1000%;
+    font-weight: 300;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
+/* end css styles for genre with most games */
+
+/* --------------------------------- */
+
+/* css styles for users show view */
+
+.welcome h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* end css styles for users show view */
+
+/* -------------------------------- */
+
+/* css styles for links */
+
+.go_back_link a {
+    position: absolute;
+    top: 80%;
+    left: 47%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* end css styles for links  */
