@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 restaurants = Restaurant.create([{restaurant_data: 'Sports and Social'}])
 restaurants = Restaurant.create([{restaurant_data: 'Hooters'}])
-restaurants = Restaurant.create([{restaurant_data: 'Atlanta's wings'}])
+restaurants = Restaurant.create([{restaurant_data: 'Atlanta Wings'}])
