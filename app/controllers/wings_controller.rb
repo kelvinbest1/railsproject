@@ -49,7 +49,7 @@ class WingsController < ApplicationController
     end
 
     def wing_params
-        params.require(:wing).permit(type, :flavor, :restaurant_id, :user_id)
+        params.require(:wing).permit(:type, :flavor, :restaurant_id, :user_id)
     end
 
 end
