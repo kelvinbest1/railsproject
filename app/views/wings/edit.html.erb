@@ -10,3 +10,12 @@
             </ul>
         </div>
     <% end %>
+
+    <% if @wing.errors.empty? %>
+        <div class="field">
+    <% else %>
+        <div class="field_with_errors">
+    <% end %>
+        <%= render 'form' %>
+    </div>
+<% end %>
