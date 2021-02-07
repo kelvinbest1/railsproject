@@ -1,0 +1,11 @@
+<%= form_for(@wing) do |f| %>
+    <%= f.text_field :type, placeholder: true %><br><br>
+
+    <%= f.text_field :flavor, placeholder: true %><br><br>
+
+    <%= f.label :restaurant_data %>
+    <%= f.collection_select :restaurant_id, Restaurant.all, :id, :restaurant_data %><br><br>
+
+    <%= f.submit "Submit Wing" %>
+
+<% end %>
