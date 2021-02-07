@@ -10,3 +10,20 @@
             </ul>
         </div>
     <% end %>
+
+    <% if @user.errors.empty? %>
+        <div class="field">
+    <% else %>
+        <div class="field_with_errors">
+    <% end %>
+        <%= form_for @user, url:'/signup' do |f| %>
+
+            <%= f.text_field :name, placeholder: true %><br><br>
+
+            <%= f.email_field :email, placeholder: true %><br><br>
+
+            <%= f.password_field :password, placeholder: true %><br><br>
+
+            <p>Immediately add a wing to your collection at signup!</p>
+
+            <%= f.fields_for :games do |wing| %>
