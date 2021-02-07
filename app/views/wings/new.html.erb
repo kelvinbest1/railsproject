@@ -1,0 +1,12 @@
+<%= form_tag(@wing, { class: "wing_form" } ) do %>
+    <h1>Add a wing to your collection</h1>
+    <% if @wing.errors.any? %>
+        <div id="error_message">
+            <h4>The following errors have occurred:</h4>
+            <ul>
+                <% @wing.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
