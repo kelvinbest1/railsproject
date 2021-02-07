@@ -45,7 +45,7 @@ class WingsController < ApplicationController
     private
 
     def find_wing
-        @wing = restaurant_with_most_wings.find_by_id(params[:id]) #refactor and DRY up find_by_id into one method
+        @wing = Wing.find_by_id(params[:id]) #refactor and DRY up find_by_id into one method
     end
 
     def wing_params
