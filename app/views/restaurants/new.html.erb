@@ -1,0 +1,12 @@
+%= form_tag(@restaurant, { class: "restaurant_form" } ) do %>
+    <h1>Add a Restaurant</h1>
+    <% if @restaurant.errors.any? %>
+        <div id="error_message">
+            <h4>The following errors have occurred:</h4>
+            <ul>
+                <% @restaurant.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
