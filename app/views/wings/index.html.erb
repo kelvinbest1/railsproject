@@ -1,8 +1,8 @@
 <div class="wing_list">
 <h1><%= @user.name %>'s Wing Collection </h1>
     <ul>
-        <% @user.games.each do |wing| %>
-            <li><%= link_to wing.type, user_wing_path(@user, wing.id) %></li>
+        <% @user.wings.each do |wing| %>
+            <li><%= link_to wing.style, user_wing_path(@user, wing.id) %></li>
         <% end %>
     </ul>
 </div>

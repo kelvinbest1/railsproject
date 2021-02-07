@@ -35,7 +35,7 @@ class UsersController < ApplicationController
     private 
 
     def user_params
-        params.require(:user).permit(:name, :email, :password, games_attributes: [:title, :platform, :user_id, :genre_id])
+        params.require(:user).permit(:name, :email, :password, wings_attributes: [:style, :flavor, :user_id, :restaurant_id])
     end
 
 end
