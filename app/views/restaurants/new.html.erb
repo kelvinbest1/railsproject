@@ -10,3 +10,19 @@
             </ul>
         </div>
     <% end %>
+
+    <% if @restaurant.errors.empty? %>
+        <div class="field">
+    <% else %>
+        <div class="field_with_errors">
+    <% end %>
+            <%= form_for(@restaurant) do |f| %>
+                <%= f.text_field :restaurant_type, placeholder: true %>
+                <%= f.submit "Add Restaurant" %><br><br>
+            <% end %>
+        </div>
+<% end %>
+
+<div class="go_back_link">
+    <%= link_to "go back", user_path(current_user.id) %>
+</div>
