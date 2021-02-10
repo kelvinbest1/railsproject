@@ -23,7 +23,7 @@ class RestaurantsController < ApplicationController
 
     private
 
-    def genre_params
+    def restaurant_params
         params.require(:restaurant).permit(:restaurant_data)
     end
 

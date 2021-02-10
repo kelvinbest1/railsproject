@@ -1,4 +1,4 @@
-%= form_tag(@restaurant, { class: "restaurant_form" } ) do %>
+<%= form_tag(@restaurant, { class: "restaurant_form" } ) do %>
     <h1>Add a Restaurant</h1>
     <% if @restaurant.errors.any? %>
         <div id="error_message">
@@ -21,7 +21,7 @@
                 <%= f.submit "Add Restaurant" %><br><br>
             <% end %>
         </div>
-<% end %>
+        <% end %>
 
 <div class="go_back_link">
     <%= link_to "go back", user_path(current_user.id) %>
