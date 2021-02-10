@@ -4,7 +4,7 @@ class RestaurantsController < ApplicationController
 
     def index
         @restaurants = Restaurant.restaurant_with_most_wings 
-        #scope method for index finding the restaurant with the most games
+        #scope method for index finding the restaurant with the most wings
     end
 
     def new
