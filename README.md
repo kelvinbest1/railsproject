@@ -1,7 +1,7 @@
 
 # README
 
-My Wing Experience
+# My Wing Experience
 A Rails app that allows a user to create an account, can edit, or delete their account, and will allow the user to add wings to their account as a collection
 
 Installation
@@ -20,8 +20,7 @@ This will generate a local server to add to a web browser of choice (prefer Goog
 Usage
 Instructions:
 
-Type 'localhost:3000' in your web browser and this will bring you to the login page.  
-
+Type 'localhost:3000' in your web browser and this will bring you to the login page. 
 Since the user is a first time user, the user will need to sign up.
 
 Once the user has signed up for an account, the user will be redirected to the profile page, where they will have the ability to add 
