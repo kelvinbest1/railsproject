@@ -26,7 +26,7 @@ Since the user is a first time user, the user will need to sign up.
 Once the user has signed up for an account, the user will be redirected to the profile page, where they will have the ability to add 
 restaurants to their page and can also log out of their account.
 
-After adding a restaurant to their account, the user will be able to select that restaurant and add games to that restaurant under their account.  
+After adding a restaurant to their account, the user will be able to select that restaurant and add wings to that restaurant under their account.  
 
 Have fun with this application!
 
@@ -34,7 +34,7 @@ Development
 There was no local testing for this application. This application was built from the ground up and tested within the terminal to ensure the code was properly working. This application was built from the ground up with the help of countless hours of google searching, the inspiration of learning to code with Flatiron School, and the never ending support from students and staff.
 
 Contributing
-Bug reports and pull requests are welcome on GitHub at https://github.com/kelvinbest1/wingsexperience. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kelvinbest1/railsproject.git. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the code of conduct.
 
 License
 The gem is available as open source under the terms of the MIT License.
