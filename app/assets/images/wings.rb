@@ -1,0 +1,1 @@
+backgroung-image: url('https://image.shutterstock.com/image-photo/baked-chicken-wings-sesame-sauce-260nw-593995979.jpg" alt="Baked chicken wings with sesame and sauce. Food background with copy space. Top view" data-automation="mosaic-grid-cell-image">')

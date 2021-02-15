@@ -15,8 +15,10 @@ class RestaurantsController < ApplicationController
         @restaurant = Restaurant.new(restaurant_params)
 
         if @restaurant.save
+            flash.notice = "You have successfully added a restaurant"
             redirect_to user_path(current_user)
         else
+            flash.alert = "Oh no, your restaurant wasn't saved. Can you please try again"
             render :new
         end
     end

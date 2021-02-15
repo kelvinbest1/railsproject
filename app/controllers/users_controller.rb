@@ -20,9 +20,11 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
 
         if @user.save
+            flash.notice = "You have successfully created an account"
             session[:user_id] = @user.id
             redirect_to @user
         else
+            flash.alert = "Oh no, your account wasn't created, please correct errors"
             render :new
         end
     end

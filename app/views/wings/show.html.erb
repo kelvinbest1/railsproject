@@ -2,7 +2,7 @@
     <h1><%= @user.name %>'s Wing Collection Details </h1>
     <p><h3>Style: <%= @wing.style %></h3></p>
     <p><h4>Flavor: <%= @wing.flavor %></h4></p>
-    <p><h4>Restaurant style: <%= @wing.restaurant.restaurant_data %></h4></p>
+    <p><h4>Restaurant: <%= @wing.restaurant.restaurant_data %></h4></p>
 </div>
 
 <% if @user == current_user %>

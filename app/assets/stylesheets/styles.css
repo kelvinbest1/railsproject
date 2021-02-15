@@ -70,14 +70,14 @@ body {
     color: white;
 }
 
-.github_sign_in {
+.google_oauth2_sign_in {
     color: white;
     text-transform: uppercase;
     position: relative;
     text-align: center;
 }
 
-.github_sign_in a {
+.google_oauth2_sign_in a {
     color: white;
     text-decoration: none;
 }
@@ -192,7 +192,7 @@ body {
 
 /* ----------------------------- */
 
-/* css styles for game form */
+/* css styles for wing form */
 
 .wing_form {
     width: 200px;
@@ -257,11 +257,11 @@ body {
     cursor: pointer;
 }
 
-/* end css styles for game form  */
+/* end css styles for wing form  */
 
 /* -------------------------------- */
 
-/* css styles for genre form */
+/* css styles for restaurant form */
 
 .restaurant_form {
     width: 200px;
@@ -307,11 +307,11 @@ body {
     cursor: pointer;
 }
 
-/* end css styles for genre form */
+/* end css styles for restaurant form */
 
 /* --------------------------------- */
 
-/* css styles for game list */
+/* css styles for wing list */
 
 .wing_list {
     color: white;
@@ -327,11 +327,11 @@ body {
     text-decoration: none;
 }
 
-/* end css styles for game list */
+/* end css styles for wing list */
 
 /* --------------------------------- */
 
-/* css styles for game list */
+/* css styles for wing list */
 
 .user_list {
     color: white;
@@ -347,11 +347,11 @@ body {
     text-decoration: none;
 }
 
-/* end css styles for game list */
+/* end css styles for wing list */
 
 /* --------------------------------- */
 
-/* css styles for game details */
+/* css styles for wing details */
 
 .wing_details {
     color: white;
@@ -362,11 +362,11 @@ body {
     font-weight: 200;
 }
 
-/* end css styles for game details */
+/* end css styles for wing details */
 
 /* --------------------------------- */
 
-/* css styles for genre with most games */
+/* css styles for restaurant with most games */
 
 .restaurant_most_wing h1 {
     color: white;
@@ -378,7 +378,7 @@ body {
     left: 30%;
 }
 
-/* end css styles for genre with most games */
+/* end css styles for restaurant with most games */
 
 /* --------------------------------- */
 

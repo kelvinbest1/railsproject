@@ -23,7 +23,12 @@
     <%= link_to 'signup', '/signup' %>
   <% end %>
   </div>
-
+<% flash.each do |name, message| %>
+  <%= message =%>
+  <% end %>
+  <div class="wing-image">
+  <%=image_tag("https://image.shutterstock.com/image-photo/baked-chicken-wings-sesame-sauce-260nw-593995979.jpg", width: '800px') =%> 
+  </div>
     <%= yield %>
   </body>
 </html>

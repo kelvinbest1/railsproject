@@ -13,9 +13,11 @@ class SessionsController < ApplicationController
             else
                 @user = User.find_by(email: params[:email])
                 if @user && @user.authenticate(params[:password])
+                    flash.notice = "You have successfully login"
                     session[:user_id] = @user.id
                     redirect_to user_path(@user)
                 else
+                    flash.alert = "Oh no, you were not signed in, please try again"
                     redirect_to login_path
                 end
             end
@@ -23,6 +25,7 @@ class SessionsController < ApplicationController
     
         def destroy
             session.clear
+            flash.notice = "You have successfully logged out"
             redirect_to login_path
         end
     

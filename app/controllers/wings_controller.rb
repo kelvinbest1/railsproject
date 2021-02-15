@@ -23,22 +23,27 @@ class WingsController < ApplicationController
         @wing = current_user.wings.build(wing_params)
 
         if @wing.save
+            flash.notice = "You have successfully added a wingß"
             redirect_to user_path(current_user)
         else
+            flash.alert = "Oh no, your wing wasn't saved, please correct errors"
             render :new
         end
     end
 
     def update
         if @wing.update(wing_params)
+            flash.notice = "Great, you have successfully updated your wing"
             redirect_to user_wing_path(current_user.id, @wing)
         else
+            flash.alert = "Oh no, you failed to update your wing"
             render :edit
         end
     end
 
     def destroy
         @wing.destroy
+        flash.notice = "You have successfully deleted a wing"
         redirect_to user_wings_path(current_user.id)
     end
 
