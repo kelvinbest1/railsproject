@@ -23,7 +23,7 @@ class WingsController < ApplicationController
         @wing = current_user.wings.build(wing_params)
 
         if @wing.save
-            flash.notice = "You have successfully added a wingß"
+            flash.notice = "You have successfully added a wing"
             redirect_to user_path(current_user)
         else
             flash.alert = "Oh no, your wing wasn't saved, please correct errors"
