@@ -6,7 +6,7 @@ class Restaurant < ApplicationRecord
     validates :restaurant_data, uniqueness: true
 
 
-    def self.restaurant_with_most_wings
-        self.joins(:wings).group('wings.id').order('count(wings.id)desc limit 1')
+    def self.restaurant_with_most_visits
+        self.joins(:wings).group('wings.id').order('count(wings.id)desc 1')
     end
 end
