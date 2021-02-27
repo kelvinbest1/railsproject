@@ -11,6 +11,11 @@ class RestaurantsController < ApplicationController
         @restaurant = Restaurant.new
     end
 
+    def show
+        @restaurant = Restaurant.find(params[:id])
+        @wings = Wing.where(restaurant: @restaurant)
+    end
+
     def create
         @restaurant = Restaurant.new(restaurant_params)
 

@@ -1,7 +1,7 @@
 
-<div class="restaurant_most_wings">
+<div class="restaurant_with_the_visits">
 <% @restaurants.each do |restaurant| %>
-    <h1><%= restaurant.restaurant_data %></h1>
+    <h1><%= link_to restaurant.restaurant_data, restaurant_path(restaurant) %></h1>
 <% end %>
 </div>
 

@@ -1,0 +1,4 @@
+<h1><%= @user.name %></h1>
+<% @wings.each do |wing| %>
+    <li><%= link_to wing.restaurant.restaurant_data, restaurant_path(wing.restaurant) %></li>
+    <% end %>

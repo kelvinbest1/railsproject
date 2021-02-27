@@ -7,6 +7,7 @@ class Restaurant < ApplicationRecord
 
 
     def self.restaurant_with_most_visits
-        self.joins(:wings).group('wings.id').order('count(wings.id)desc 1')
+        self.joins(:wings).group('wings.id').order('count(wings.id) desc')
+
     end
 end
