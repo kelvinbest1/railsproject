@@ -1,5 +1,5 @@
 
-<div class="restaurant_with_the_visits">
+<div>
 <% @restaurants.each do |restaurant| %>
     <h1><%= link_to restaurant.restaurant_data, restaurant_path(restaurant) %></h1>
 <% end %>

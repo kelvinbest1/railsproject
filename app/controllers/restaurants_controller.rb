@@ -3,7 +3,7 @@ class RestaurantsController < ApplicationController
     before_action :redirect_if_not_logged_in
 
     def index
-        @restaurants = Restaurant.restaurant_with_most_visits 
+        @restaurants = Restaurant.all
         #scope method for index finding the restaurant with the most wings
     end
 
@@ -13,7 +13,7 @@ class RestaurantsController < ApplicationController
 
     def show
         @restaurant = Restaurant.find(params[:id])
-        @wings = Wing.where(restaurant: @restaurant)
+        @users = @restaurant.users
     end
 
     def create

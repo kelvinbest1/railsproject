@@ -2,6 +2,6 @@ class UserRestaurantsController < ApplicationController
 
     def index
         @user = User.find(params[:user_id])
-        @wings = Wing.where(user: @user)
+        @wings = current_user.wings 
     end
 end
