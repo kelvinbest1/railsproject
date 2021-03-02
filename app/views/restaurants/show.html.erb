@@ -1,7 +1,13 @@
 <h1><%= @restaurant.restaurant_data %></h1>
+<h3>List of Users Visited</h3>
 <% @users.each do |user| %>
- <li>   <%= user.name %> </li>
+<li>   <%=link_to user.name%> </li>
+
 <% end %>
+
+<div class="go_back_link">
+<%= link_to "go back", user_path(current_user.id) %>
+</div>
 
 
 
