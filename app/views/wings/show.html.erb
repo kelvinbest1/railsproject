@@ -2,7 +2,7 @@
     <h1><%= @user.name %>'s Wing Collection Details </h1>
     <p><h3>Style: <%= @wing.style %></h3></p>
     <p><h4>Flavor: <%= @wing.flavor %></h4></p>
-    <p><h4>Restaurant: <%= @wing.restaurant.restaurant_data %></h4></p>
+    <p><h4>Restaurant: <%=link_to @wing.restaurant.restaurant_data, restaurant_path(@user) %></h4></p>
 </div>
 
 <% if @user == current_user %>
@@ -11,4 +11,9 @@
     <%= link_to "delete wing", @wing, method: :delete, data: { confirm: "Are you sure you want to delete this wing?" } %><br><br>
 </div>
 <% end %>
+
+
+<div class="go_back_link">
+        <%= link_to "go back", @user %>
+    </div>
 

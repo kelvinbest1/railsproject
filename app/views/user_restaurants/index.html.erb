@@ -3,3 +3,8 @@
 <% @wings.each do |wing| %>
     <li><%= link_to wing.restaurant.restaurant_data, restaurant_path(wing.restaurant) %></li>
     <% end %>
+
+
+<div class="go_back_link">
+<%= link_to "go back", @user %>
+</div>
