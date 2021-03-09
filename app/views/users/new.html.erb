@@ -12,7 +12,7 @@
     <% end %>
 
     <% if @user.errors.empty? %>
-        <div class="field">
+      <div class="field">
     <% else %>
         <div class="field_with_errors">
     <% end %>
@@ -33,7 +33,7 @@
                 <%= wing.text_field :flavor, placeholder: true, required: true %><br><br>
 
                 <%= wing.label :restaurant_data %>
-                <%= wing.collection_select :restaurant_id, Restaurant.all, :id, :restaurant_data %><br><br>
+                <%= wing.collection_select :restaurant_id, Restaurant.all, :id, :restaurant_data, prompt: "Please Select One" %><br><br>
 
             <% end %>
 
