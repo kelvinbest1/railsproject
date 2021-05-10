@@ -11,13 +11,13 @@ Rails.application.routes.draw do
   get '/search' => 'users#search'
 
   resources :users do
-    resources :restaurants only: [:index, :show]
+    resources :restaurants, only: [:index, :show]
     resources :wings
   end
 
   resources :wings
 
   resources :restaurants do
-    resources :wings [:index, :new, :create, :show]
+    resources :wings, only: [:index, :new, :create, :show]
   end
 end
