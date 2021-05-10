@@ -5,6 +5,7 @@ class WingsController < ApplicationController
 
     def new
         @wing = Wing.new(user_id: params[current_user.id])
+        @wing.build_user
     end
 
     def index

@@ -15,7 +15,7 @@ class RestaurantsController < ApplicationController
         end
     
        
-    end
+    
 
     def new
         @restaurant = Restaurant.new
