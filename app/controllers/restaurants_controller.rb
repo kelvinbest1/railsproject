@@ -2,8 +2,18 @@ class RestaurantsController < ApplicationController
 
     before_action :redirect_if_not_logged_in
 
-    def index
-        @restaurants = Restaurant.all
+    
+        def index
+            if params[:user_id]
+                @user = User.find_by_id(params[:user_id])
+                @users = User.find_by_id(params[:user_id]).name
+                @restaurants = @user.restaurants
+            else
+                
+                @restaurants = Restaurant.all
+            end
+        end
+    
        
     end
 
