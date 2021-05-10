@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get '/search' => 'users#search'
 
   resources :users do
-    resources :restaurants, controller: 'user_restaurants'
+    resources :restaurants
     resources :wings
   end
 

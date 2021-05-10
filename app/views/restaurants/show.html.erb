@@ -1,4 +1,4 @@
-<h1><%= @restaurant.restaurant_data %></h1>
+<h1><%= @restaurant.name %></h1>
 <h3>List of Users Visited</h3>
 <% @users.each do |user| %>
 <li>   <%=link_to user.name, user_restaurants_path(user)%> </li>
