@@ -1,9 +1,16 @@
 <div class="wing_details">
+<% if @user == current_user %>
+    <h1>Your  Wing Collection Details </h1>
+    <p><h3>Style: <%= @wing.style %></h3></p>
+    <p><h4>Flavor: <%= @wing.flavor %></h4></p>
+    <p><h4>Restaurant: <%=link_to @wing.restaurant.name, restaurant_path(@user) %></h4></p>
+<% else %>
     <h1><%= @user.name %>'s Wing Collection Details </h1>
     <p><h3>Style: <%= @wing.style %></h3></p>
     <p><h4>Flavor: <%= @wing.flavor %></h4></p>
     <p><h4>Restaurant: <%=link_to @wing.restaurant.name, restaurant_path(@user) %></h4></p>
-</div>
+    <% end %>
+    </div>
 
 <% if @user == current_user %>
 <div class="links">

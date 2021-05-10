@@ -1,8 +1,18 @@
 <div class="wing_list">
+<div class="wing_list">
+ <% if @user == current_user %>
+    <h1>Your Wing Collection </h1>
+    <ul>
+        <% @user.wings.each do |wing| %>
+            <li><%= link_to wing.style, user_wing_path(@user, wing.id) %></li>
+        <% end %>
+    </ul>
+    <% else %>
 <h1><%= @user.name %>'s Wing Collection </h1>
     <ul>
         <% @user.wings.each do |wing| %>
             <li><%= link_to wing.style, user_wing_path(@user, wing.id) %></li>
+        <% end %>
         <% end %>
     </ul>
 </div>
