@@ -1,11 +1,11 @@
 
-<div>
+<h1><%= @users %></h1>
+<h3> Restaurants Visited</h3>
 <% @restaurants.each do |restaurant| %>
-    <h1><%= link_to restaurant.name, restaurant_path(restaurant) %></h1>
-<% end %>
-</div>
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+    <% end %>
 
+    <div class="go_back_link">
+    <%= link_to "go back", @user %>
+    </div>
 
-<div class="go_back_link">
-<%= link_to "go back", user_path(current_user.id) %>
-</div>
