@@ -33,7 +33,7 @@
                 <%= wing.text_field :flavor, placeholder: true, required: true %><br><br>
 
                 <%= wing.label :name %>
-                <%= wing.collection_select :restaurant_id, Restaurant.all, :id, :Restaurant, prompt: "Please Select One" %><br><br>
+                <%= wing.collection_select :restaurant_id, Restaurant.all, :id, :name, prompt: "Please Select One" %><br><br>
 
             <% end %>
 

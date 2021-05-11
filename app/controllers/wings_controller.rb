@@ -5,7 +5,7 @@ class WingsController < ApplicationController
 
     def new
         @wing = Wing.new(user_id: params[current_user.id])
-        5.times {@wing.build_user}
+        @wing.build_user
     end
 
     def index

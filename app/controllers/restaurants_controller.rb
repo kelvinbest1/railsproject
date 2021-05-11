@@ -1,6 +1,7 @@
 class RestaurantsController < ApplicationController
 
     before_action :redirect_if_not_logged_in
+    before_action :find_restaurant, only: [:show]
 
     
         def index
@@ -22,7 +23,7 @@ class RestaurantsController < ApplicationController
     end
 
     def show
-        @restaurant = Restaurant.find(params[:id])
+       
         @users = @restaurant.users
     end
 
@@ -39,6 +40,9 @@ class RestaurantsController < ApplicationController
     end
 
     private
+    def find_restaurant
+        @restaurant = Restaurant.find_by_id(params[:id])
+    end
 
     def restaurant_params
         params.require(:restaurant).permit(:name)
