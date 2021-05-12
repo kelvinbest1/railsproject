@@ -4,8 +4,10 @@ class WingsController < ApplicationController
     before_action :find_wing #use private method for finding wing as a before action call
 
     def new
+        
         @wing = Wing.new(user_id: params[current_user.id])
-        @wing.build_user
+        
+        
     end
 
     def index

@@ -28,9 +28,9 @@
 
             <%= f.fields_for :wings do |wing| %>
 
-            <%= wing.text_field :style, placeholder: true, required: true %><br><br>
+            <%= wing.text_field :style, placeholder: true, optional: true %><br><br>
 
-                <%= wing.text_field :flavor, placeholder: true, required: true %><br><br>
+                <%= wing.text_field :flavor, placeholder: true, optional: true %><br><br>
 
                 <%= wing.label :name %>
                 <%= wing.collection_select :restaurant_id, Restaurant.all, :id, :name, prompt: "Please Select One" %><br><br>

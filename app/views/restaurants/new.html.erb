@@ -16,8 +16,8 @@
     <% else %>
         <div class="field_with_errors">
     <% end %>
-            <%= form_for(@restaurant) do |f| %>
-                <%= f.text_field :restaurant_data, placeholder: true %>
+            <%= form_with model: @restaurant do |f| %>
+                <%= f.text_field :name, placeholder: true %>
                 <%= f.submit "Add Restaurant" %><br><br>
             <% end %>
         </div>
